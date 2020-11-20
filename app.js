@@ -23,7 +23,7 @@ function LunchCheckController ($scope, $filter) {
       if(word != "")
         count++;
     }
-    if(word == "") {
+    if(count == 0) {
       $scope.message = "Please enter data first";
        $scope.messageColor = "red";
     } else if(count <= 3) {
